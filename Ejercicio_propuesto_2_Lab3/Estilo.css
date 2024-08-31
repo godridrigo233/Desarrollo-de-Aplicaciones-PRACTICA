@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+@media (min-width: 480px) {
+    .box {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (min-width: 900px) {
+    .box {
+        flex: 1 1 calc(25% - 20px);
+    }
+}
